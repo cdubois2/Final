@@ -13,12 +13,14 @@ function loadCookieList(){
             arrayCookie[i];
         }
     }
+    console.log("works");
 }
 
 function saveArray(){
     var input = document.getElementById("first_value").value
     var setter = input.toString();
     setCookie("setterString",setter,10);
+    console.log("works");
 }
 
 function checkVowel(){
