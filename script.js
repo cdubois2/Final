@@ -1,4 +1,5 @@
 window.onload = loadCookieList;
+var count = 0;
 
 function clearText(){
   document.getElementById("first_value").value = " ";
@@ -8,7 +9,7 @@ function clearText(){
 function loadCookieList(){
     var cookieSaver = getCookie("setterString");
     document.getElementById("first_value").value = cookieSaver;
-    console.log("works");
+    document.getElementById("output").innerHTML = count;
 }
 
 function saveArray(){
@@ -20,7 +21,7 @@ function saveArray(){
 function checkVowel(){
   var inputString = document.getElementById("first_value").value;
   var vowels = ['a', 'e', 'i', 'o', 'u'];
-  var count = 0;
+  //var count = 0;
 
   for(var i = 0; i < inputString.length; i++){
     if(vowels.indexOf(inputString[i]) > -1)
@@ -29,6 +30,7 @@ function checkVowel(){
     }
   }
   document.getElementById("output").innerHTML = count;
+  return count;
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
