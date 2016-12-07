@@ -10,6 +10,7 @@ function loadCookieList(){
     var arrayCookie = cookieSaver.split(" ");
     for(var i = 0; i < arrayCookie.length; i++){
         if(arrayCookie.length > 1){
+            document.getElementById("first_value").value = 
             arrayCookie[i];
         }
     }
