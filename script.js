@@ -7,13 +7,7 @@ function clearText(){
 
 function loadCookieList(){
     var cookieSaver = getCookie("setterString");
-    var arrayCookie = cookieSaver.split(" ");
-    for(var i = 0; i < arrayCookie.length; i++){
-        if(arrayCookie.length > 1){
-            document.getElementById("first_value").value = 
-            arrayCookie[i];
-        }
-    }
+    document.getElementById("first_value").value = cookieSaver;
     console.log("works");
 }
 
@@ -21,7 +15,6 @@ function saveArray(){
     var input = document.getElementById("first_value").value
     var setter = input.toString();
     setCookie("setterString",setter,10);
-    console.log("works");
 }
 
 function checkVowel(){
