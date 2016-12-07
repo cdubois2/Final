@@ -6,7 +6,7 @@ h1,h2{
     color:#050036;
     font-size: 300%;
 }
-p,a,h3{
+p,h3{
     font-family: helvetica;
     color:#050036;
     padding: 10px;
@@ -108,8 +108,16 @@ footer{
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s
 }
-#clear,#saver,#display:hover {
+#clear:hover {
     background-color: #801515; 
+    color: white;
+}
+#saver:hover {
+    background-color: #lightgreen; 
+    color: white;
+}
+,#display:hover {
+    background-color: #lightblue; 
     color: white;
 }
 
