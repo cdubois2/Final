@@ -14,7 +14,7 @@ p,a,h3{
     text-align: center;
 
 }
-ul {
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -22,11 +22,11 @@ ul {
     background-color: #D46A6A
 }
 
-li {
+li{
     float: center;
 }
 
-li a {
+li a{
     font-family: helvetica;
     display: block;
     color: white;
@@ -36,7 +36,7 @@ li a {
     font-size: 150%;
 }
 
-li a:hover {
+li a:hover{
     color:white;
     text-decoration: none;
     background-color: #801515;
@@ -53,7 +53,7 @@ a.fill{
     text-decoration:none;
 }
 
-footer {
+footer{
     margin: 5px;
     padding: 5px;
     display: block;
@@ -108,17 +108,13 @@ footer {
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s
 }
-#clear:hover {
+#clear,#saver,#display:hover {
     background-color: #801515; 
     color: white;
 }
 
  body{
     background-color: #801515;
-
  }
 
-span#exeter{
-    font-size: 800%;
-}
 
