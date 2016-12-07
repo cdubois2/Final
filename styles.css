@@ -116,7 +116,8 @@ footer{
     background-color: #lightgreen; 
     color: white;
 }
-,#display:hover {
+
+#display:hover {
     background-color: #lightblue; 
     color: white;
 }
