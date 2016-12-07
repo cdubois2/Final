@@ -108,10 +108,12 @@ footer{
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s
 }
+
 #clear:hover {
     background-color: #801515; 
     color: white;
 }
+
 #saver:hover {
     background-color: #lightgreen; 
     color: white;

@@ -21,7 +21,7 @@ function saveArray(){
 function checkVowel(){
   var inputString = document.getElementById("first_value").value;
   var vowels = ['a', 'e', 'i', 'o', 'u'];
-  //var count = 0;
+  count = 0;
 
   for(var i = 0; i < inputString.length; i++){
     if(vowels.indexOf(inputString[i]) > -1)
