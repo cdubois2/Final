@@ -19,7 +19,7 @@ function saveArray(){
   var inputNum = document.getElementById("output").innerHTML;
   if(input != " "){
     var setter = input.toString();
-    var setterNum = inputNum.toString();
+    var setterNum = inputNum;
     setCookie("setterString",setter,10);
     setCookie("setterNum",setterNum,10);
   }
