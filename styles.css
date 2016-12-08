@@ -83,6 +83,7 @@ footer{
     padding-bottom:15px;
     border: 5px solid #550000;
     background-color: white;
+
 }
 
 #box {
@@ -92,6 +93,8 @@ footer{
     padding-bottom:15px;
     border: 5px solid #550000;
     background-color: #FFAAAA;
+    background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 45px 45px;
 }
 
 #clear,#saver,#display{
@@ -110,7 +113,7 @@ footer{
 }
 
 #clear:hover {
-    background-color: #801515; 
+    background-color: darkorange; 
     color: white;
 }
 
@@ -126,6 +129,7 @@ footer{
 
  body{
     background-color: #801515;
+
  }
 
 

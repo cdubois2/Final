@@ -26,7 +26,6 @@ function saveArray(){
     else{
       alert("Please Enter Unique Value");
     }
-  }
 }
 
 function checkVowel(){
