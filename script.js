@@ -11,7 +11,7 @@ function loadCookieList(){
   var cookieSaver = getCookie("setterString");
   var cookieSaverNum = getCookie("setterNum");
   document.getElementById("first_value").value = cookieSaver;
-  document.getElementById("output").value = cookieSaverNum;
+  document.getElementById("output").innerHTML = cookieSaverNum;
 }
 
 function saveArray(){
