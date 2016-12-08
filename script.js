@@ -16,7 +16,7 @@ function loadCookieList(){
 
 function saveArray(){
   var input = document.getElementById("first_value").value;
-  var inputNum = document.getElementById("output").value;
+  var inputNum = document.getElementById("output").innerHTML;
   if(input != " "){
     var setter = input.toString();
     var setterNum = inputNum.toString();
