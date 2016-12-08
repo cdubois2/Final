@@ -1,5 +1,5 @@
-window.onload = loadCookieList;
 window.onload = checkVowel;
+window.onload = loadCookieList;
 var count = 0;
 
 function clearText(){
