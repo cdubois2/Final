@@ -13,9 +13,7 @@ function loadCookieList(){
     if(cookieSaver == null){
       alert("Cannot Load Empty Entry");
     }
-    else{
-      document.getElementById("output").innerHTML = count;
-    }
+    document.getElementById("output").innerHTML = count;
 }
 
 function saveArray(){
