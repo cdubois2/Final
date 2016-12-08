@@ -6,6 +6,11 @@ h1,h2{
     color:#050036;
     font-size: 300%;
 }
+
+body{
+    background-color: #801515;
+}
+
 p,h3{
     font-family: helvetica;
     color:#050036;
@@ -14,6 +19,7 @@ p,h3{
     text-align: center;
 
 }
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -86,7 +92,7 @@ footer{
 
 }
 
-#box {
+#box{
     height: 550px;
     margin: 5px;
     padding: 5px;
@@ -112,24 +118,21 @@ footer{
     transition-duration: 0.4s
 }
 
-#clear:hover {
+#clear:hover{
     background-color: darkorange; 
     color: white;
 }
 
-#saver:hover {
+#saver:hover{
     background-color: #195E19; 
     color: white;
 }
 
-#display:hover {
+#display:hover{
     background-color: #358784; 
     color: white;
 }
 
- body{
-    background-color: #801515;
 
- }
 
 
