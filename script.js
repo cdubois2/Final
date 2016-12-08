@@ -11,7 +11,7 @@ function loadCookieList(){
   var cookieSaver = getCookie("setterString");
   var cookieSaverNum = getCookie("setterNum");
   document.getElementById("first_value").value = cookieSaver;
-  document.getElementById("output").innerHTML = cookieSaverNum;
+  document.getElementById("output").value = cookieSaverNum;
 }
 
 function saveArray(){
@@ -19,7 +19,7 @@ function saveArray(){
   var inputNum = document.getElementById("output").value;
   if(input != " "){
     var setter = input.toString();
-    var setterNum = inputNum;
+    var setterNum = inputNum.toString();
     setCookie("setterString",setter,10);
     setCookie("setterNum",setterNum,10);
   }
