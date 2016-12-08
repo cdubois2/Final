@@ -10,9 +10,6 @@ function clearText(){
 function loadCookieList(){
     var cookieSaver = getCookie("setterString");
     document.getElementById("first_value").value = cookieSaver;
-    if(cookieSaver == null){
-      alert("Cannot Load Empty Entry");
-    }
     document.getElementById("output").innerHTML = count;
 }
 
