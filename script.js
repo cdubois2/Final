@@ -9,18 +9,24 @@ function clearText(){
 function loadCookieList(){
     var cookieSaver = getCookie("setterString");
     document.getElementById("first_value").value = cookieSaver;
-    document.getElementById("output").innerHTML = count;
+    if(cookieSaver == null){
+      alert("Cannot Load Empty Entry");
+    }
+    else{
+      document.getElementById("output").innerHTML = count;
+    }
 }
 
 function saveArray(){
     var input = document.getElementById("first_value").value
-    if(input != " "){
+   if(input != " "){
       var setter = input.toString();
       setCookie("setterString",setter,10);
     }
     else{
       alert("Please Enter Unique Value");
     }
+  }
 }
 
 function checkVowel(){
