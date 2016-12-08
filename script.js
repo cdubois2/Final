@@ -8,32 +8,32 @@ function clearText(){
 }
 
 function loadCookieList(){
-    var cookieSaver = getCookie("setterString");
-    document.getElementById("first_value").value = cookieSaver;
-    document.getElementById("output").innerHTML = count;
+  var cookieSaver = getCookie("setterString");
+  document.getElementById("first_value").value = cookieSaver;
+  document.getElementById("output").innerHTML = count;
 }
 
 function saveArray(){
-    var input = document.getElementById("first_value").value
-   if(input != " "){
-      var setter = input.toString();
-      setCookie("setterString",setter,10);
-    }
-    else{
-      alert("Please Enter Unique Value");
-    }
+  var input = document.getElementById("first_value").value
+  if(input != " "){
+    var setter = input.toString();
+    setCookie("setterString",setter,10);
+  }
+  else{
+    alert("Please Enter Unique Value");
+  }
 }
 
 function checkVowel(){
   var inputString = document.getElementById("first_value").value;
   var vowels = ['A','a','E','e','I','i','O','o','U','u'];
-  count = 0;
+  //count = 0;
 
   for(var i = 0; i < inputString.length; i++){
     if(vowels.indexOf(inputString[i]) > -1){
       count+=1;
-      }
     }
+  }
   document.getElementById("output").innerHTML = count;
   return count;
 }
