@@ -14,8 +14,13 @@ function loadCookieList(){
 
 function saveArray(){
     var input = document.getElementById("first_value").value
-    var setter = input.toString();
-    setCookie("setterString",setter,10);
+    if(input == " "){
+      var setter = input.toString();
+      setCookie("setterString",setter,10);
+    }
+    else{
+      alert("Please Enter Unique Value");
+    }
 }
 
 function checkVowel(){
@@ -24,11 +29,10 @@ function checkVowel(){
   count = 0;
 
   for(var i = 0; i < inputString.length; i++){
-    if(vowels.indexOf(inputString[i]) > -1)
-    {
+    if(vowels.indexOf(inputString[i]) > -1){
       count+=1;
+      }
     }
-  }
   document.getElementById("output").innerHTML = count;
   return count;
 }
