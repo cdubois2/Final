@@ -14,7 +14,7 @@ function loadCookieList(){
 
 function saveArray(){
     var input = document.getElementById("first_value").value
-    if(input == " "){
+    if(input != " "){
       var setter = input.toString();
       setCookie("setterString",setter,10);
     }
