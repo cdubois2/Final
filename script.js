@@ -9,15 +9,19 @@ function clearText(){
 
 function loadCookieList(){
   var cookieSaver = getCookie("setterString");
+  var cookieSaverNum = getCookie("setterNum");
   document.getElementById("first_value").value = cookieSaver;
-  document.getElementById("output").innerHTML = count;
+  document.getElementById("output").value = cookieSaverNum;
 }
 
 function saveArray(){
-  var input = document.getElementById("first_value").value
+  var input = document.getElementById("first_value").value;
+  var inputNum = document.getElementById("output").value;
   if(input != " "){
     var setter = input.toString();
+    var setterNum = inputNum;
     setCookie("setterString",setter,10);
+    setCookie("setterNum",setterNum,10);
   }
   else{
     alert("Please Enter Unique Value");
